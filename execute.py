@@ -12,12 +12,17 @@ for nome in lista_nomes:
     
     page = requests.get(url)
     soup = BeautifulSoup(page.text, 'html.parser')
+    print(url)
 
     results_store = soup.find_all('h3')
     storeNames = [resultstore.string for resultstore in results_store]
 
     results_prices = soup.find_all('p', class_='Text_Text__ARJdp Text_MobileHeadingS__HEz7L')
     storePrice = [resultprice.string for resultprice in results_prices]
+
+    url = soup.find_all('a', 'href')
+    print(url)
+
 
     # Adicionar dados a all_data para cada loja e preço
     for store, price in zip(storeNames, storePrice):
