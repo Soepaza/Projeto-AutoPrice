@@ -63,8 +63,13 @@ email.Attachments.Add(str(attachment))
 
 email.Send()
 
+
+
 #organizar o projeto no github
+
 
 #organizar por preços os produtos ////////////// / FEITO
 #filtrar preco minimo e preco maximo    ///////// Nao feito
 #mandar email automatico   /////////// Feito
+
+#
