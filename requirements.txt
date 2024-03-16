@@ -1,5 +1,6 @@
-import pandas as pd
-import requests
-from bs4 import BeautifulSoup
-import win32com.client as win32
-import pathlib
+pandas
+requests
+beautifulsoup4
+pywin32
+pathlib
+openpyxl
